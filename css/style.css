@@ -1,9 +1,28 @@
 .content_card {
   width: 35rem;
+  height: 596px;
   margin: auto;
   background-color: hsl(216, 50%, 16%);
   border-radius: 1.6rem;
   margin-top: 152px;
+  margin-bottom: 152px;
+}
+
+/* .view { 
+  display: none;
+}  */
+.view {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: hsla(178, 100%, 50%, 0.397);
+  width: 30.2rem;
+  height: 30.2rem;
+  margin: 2.4rem;
+  border-radius: 8px;
+}
+.view img {
+  margin: auto;
 }
 
 .img_nft {
@@ -21,17 +40,21 @@
   font-weight: 700;
   margin-top: 0;
 }
+.titulo:hover {
+  color: hsl(178, 100%, 50%);
+}
 .description{
   font-size: 1.8rem;
   color: hsl(215, 51%, 70%);
   line-height: 30px;
+  margin-bottom: 0px;
 }
 /** Card Icons */
 .card_icons {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin-top: 0px;
+  margin-top: .6rem;
 }
 /** Criptos */
 .content_cripto {
@@ -39,6 +62,7 @@
   align-items: center;
   gap: .5rem;
   margin-left: 2.4rem;
+  /* margin-top: .5rem; */
 }
 .icon_cripto {
   width: 1.1rem;
@@ -69,22 +93,35 @@
 /* line */
 hr {
   color: hsl(215, 32%, 27%);
+  margin: .8rem 24px 0px 24px;
 }
 /* Footer_card */
 .card_footer{
   display: flex;
   align-items: center;
-  margin: 24px;
+  padding: 1.6rem 2.4rem 3.0rem 2.4rem;
   font-size: 1.6rem;
 }
-
+.bg-img {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 3.3rem;
+  height: 3.3rem;
+  margin-right: 1.8rem;
+}
 .icon_avatar {
   width: 3.1rem;
-  
+  height: 3.1rem;
+  display: block;
+  margin: auto;
+  margin-top: .1rem;
 }
-
 .p_footer {
   color: hsl(0, 0%, 100%);
+  margin: 0;
+}
+.p_footer:hover {
+  color: hsl(178, 100%, 50%);
 }
 .p_footer span {
   color: hsl(215, 51%, 70%);
